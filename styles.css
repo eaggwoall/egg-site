@@ -21,9 +21,22 @@ h2 {
 	text-align: left;
 }
 
+h3 {
+	font-family: verdana;
+	font-size: 12px;
+	color: #403A55; /* Closer between h1 and p, to transition */
+	text-align: left;
+}
+
 p {
 	font-family: verdana;
 	font-size: 14px;
 	color: #362F4F; /* High-contrast dark purple-black */
 	line-height: 1.6;
+}
+
+.purple-glow {
+	color: #7C5BCA; /* Main purple color */
+	text-shadow: 0 0 8px #D1C6E1, 0 0 15px #D1C6E1; /* Soft purple glow */
+	transition: 0.3s; /* Makes it smooth if you hover */
 }
