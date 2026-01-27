@@ -1,0 +1,29 @@
+body {
+	background-color: #F8F6FC; /* Very light purple-tinted white */
+}
+
+h1 {
+	font-family: verdana;
+	font-size: 24px;
+	color: #ffffff;
+	text-align: center;
+	border: 2px solid #7C5BCA;
+	background-color: #7C5BCA; /* Main brand purple */
+	height: 40px;
+	border-radius: 10px;
+	padding-top: 5px;
+}
+
+h2 {
+	font-family: verdana;
+	font-size: 18px;
+	color: #4A455A; /* Deep muted purple for readability */
+	text-align: left;
+}
+
+p {
+	font-family: verdana;
+	font-size: 14px;
+	color: #362F4F; /* High-contrast dark purple-black */
+	line-height: 1.6;
+}
