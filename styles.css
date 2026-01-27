@@ -37,6 +37,6 @@ p {
 
 .purple-glow {
 	color: #F1E5AC; /* Main purple color */
-	text-shadow: 0 0 15px #FFFFFF, 0 0 20px #FFFFFF; /* Soft black */
+	text-shadow: 0 0 15px #FFFFFF, 0 0 20px #FFFFFF, 0 0 25px #000000; /* Soft black */
 	transition: 0.3s; /* Makes it smooth if you hover */
 }
