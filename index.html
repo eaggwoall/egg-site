@@ -29,12 +29,24 @@
   <input type="submit" value="The special button that leads to Google" />
   </form>
   <p>The third paragraph that introduces the <em>form</em></p>
-  <form action="formtarget.html" method="GET">
-    <label for="fname">First name:</label><br>
-    <input type="text" id="fname" name="fname" value="Egg"><br>
-    <label for="lname">Last name:</label><br>
-    <input type="text" id="lname" name="lname" value="Baud"><br>
-    <input type="submit" value="The special button that submits your form" />
+  <form action="result.html" method="GET">
+   <fieldset>
+    <legend>Text Boxes</legend>
+     <label for="first">First name:</label><br>
+     <input type="text" id="first" name="first" ><br>
+     <label for="last">Last name:</label><br>
+     <input type="text" id="last" name="last" value="Baud"><br>
+   </fieldset>
+   <fieldset>
+    <legend>Radio Buttons</legend>  
+     <input type="radio" id="html" name="fav_language" value="HTML">
+     <label for="html">HTML</label><br>
+     <input type="radio" id="css" name="fav_language" value="CSS">
+     <label for="css">CSS</label><br>
+     <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+     <label for="javascript">JavaScript</label>
+   </fieldset>
+   <input type="submit" value="The special button that submits your form" />
   </form>
 </body>
 
