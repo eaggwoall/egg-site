@@ -4,51 +4,59 @@
 <head>
   <title>EggSite</title>
   <link rel="stylesheet" href="styles.css">
+  <script src="jquery-3.7.1.min.js"></script>
 </head>
 
 <body>
-  <h1>The big header</h1>
-  <h2>The header</h2>
-  <h3>The small header</h3>
-  <p>The first paragraph with a 
-    <span style="color: blue; font-weight: bold;">very stylish</span> <!-- inline style using html -->
-    word. Here is a special 
-    <a href="https://google.com">link</a>
-    to click
-  </p>
-  <p>The second paragraph that introduces the 
-  <span class="purple-glow">unordered list</span>
-  </p>
+    <header id="mainHeader">
+        <h1>Catalog</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="login.html">Login</a>
+            <a href="about.html">About</a>
+        </nav>
+    </header>
 
-  <ul>
-    <li>item <em>one</em></li>
-    <li>item two</li>
-    <li>item three</li>
-  </ul>
-  <form action="https://google.com">
-  <input type="submit" value="The special button that leads to Google" />
-  </form>
-  <p>The third paragraph that introduces the <em>form</em></p>
-  <form action="result.html" method="GET">
-   <fieldset>
-    <legend>Text Boxes</legend>
-     <label for="first">First name:</label><br>
-     <input type="text" id="first" name="first" ><br>
-     <label for="last">Last name:</label><br>
-     <input type="text" id="last" name="last" value="Baud"><br>
-   </fieldset>
-   <fieldset>
-    <legend>Radio Buttons</legend>  
-     <input type="radio" id="html" name="fav_language" value="HTML">
-     <label for="html">HTML</label><br>
-     <input type="radio" id="css" name="fav_language" value="CSS">
-     <label for="css">CSS</label><br>
-     <input type="radio" id="javascript" name="fav_language" value="JavaScript">
-     <label for="javascript">JavaScript</label>
-   </fieldset>
-   <input type="submit" value="The special button that submits your form" />
-  </form>
+    <header id="categoryHeader">
+        <h2>Quick Categories</h2>
+        
+        <div class="categories">
+            <a href="index.html?category=electronics" class="categorybtn">Electronics</a>
+            <a href="index.html?category=clothing" class="categorybtn">Clothing</a>
+            <a href="index.html?category=accessories" class="categorybtn">Accessories</a>
+            <a href="index.html?category=games" class="categorybtn">Games</a>
+        </div>
+
+        <button id="toggleHeader" aria-label="Toggle Categories">^</button>
+    </header>
+
+    <main class="catalog">
+        <div class="item">
+            <h3>Item A</h3>
+            <p>$10</p>
+            <a href="confirm.html?item=Item+A">
+                <button>Add to Cart</button>
+            </a>
+        </div>
+
+        <div class="item">
+            <h3>Item B</h3>
+            <p>$20</p>
+            <a href="confirm.html?item=Item+B">
+                <button>Add to Cart</button>
+            </a>
+        </div>
+
+        <div class="item">
+            <h3>Item C</h3>
+            <p>$30</p>
+            <a href="confirm.html?item=Item+C">
+                <button>Add to Cart</button>
+            </a>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+
 </body>
-
-  
 </html>
