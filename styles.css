@@ -1,42 +1,85 @@
 body {
-	background-color: #F8F6FC; /* Very light purple-tinted white */
+    margin: 0;
+    font-family: Arial, sans-serif;
 }
 
-h1 {
-	font-family: verdana;
-	font-size: 24px;
-	color: #ffffff;
-	text-align: center;
-	border: 2px solid #7C5BCA;
-	background-color: #7C5BCA; /* Main brand purple */
-	height: 40px;
-	border-radius: 10px;
-	padding-top: 5px;
+#mainHeader {
+    display: flex;
+    background: #222;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    padding: 0px 20px;
 }
 
-h2 {
-	font-family: verdana;
-	font-size: 18px;
-	color: #4A455A; /* Deep muted purple for readability */
-	text-align: left;
+#mainHeader nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: bold;
+    float: right;
 }
 
-h3 {
-	font-family: verdana;
-	font-size: 12px;
-	color: #403A55; /* Closer between h1 and p, to transition */
-	text-align: left;
+#mainHeader nav a:hover {
+    text-decoration: underline;
 }
 
-p {
-	font-family: verdana;
-	font-size: 14px;
-	color: #362F4F; /* High-contrast dark purple-black */
-	line-height: 1.6;
+#categoryHeader {
+    position: relative;
+    background: #444;
+    color: white;
+    padding: 15px 20px;
 }
 
-.purple-glow {
-	color: #F1E5AC; /* Main purple color */
-	text-shadow: 0 0 15px #341539, 0 0 20px #341539, 0 0 25px #000000; /* Soft black */
-	transition: 0.3s; /* Makes it smooth if you hover */
+#categoryHeader h2 {
+    margin-top: 0;
+}
+
+.categories {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.categorybtn {
+    background: #666;
+    color: white;
+    padding: 8px 12px;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+#toggleHeader {
+    position: absolute;
+    bottom: 8px;
+    right: 10px;
+
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+#toggleHeader:hover {
+    opacity: 0.7;
+}
+
+.catalog {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+}
+
+.item {
+    border: 1px solid #ccc;
+    padding: 15px;
+    width: 180px;
+}
+
+.item button {
+    margin-top: 10px;
+    width: 100%;
+    cursor: pointer;
 }
