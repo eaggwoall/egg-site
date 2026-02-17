@@ -3,9 +3,34 @@
 <head>
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="styles.css">
-    <title>title</title>
+    <title>Item Added</title>
 </head>
 <body>
-    
+    <header id="mainHeader">
+        <h1>EggShop</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="login.html">Login</a>
+            <a href="about.html">About</a>
+        </nav>
+    </header>
+
+    <main style="padding: 40px;">
+        <h2 id="confirmationMessage"></h2>
+        <br>
+        <a href="index.html">Continue Shopping</a>
+    </main>
+
+    <script>
+        const params = new URLSearchParams(window.location.search);
+        const productName = params.get("item");
+        const messageElement = document.getElementById("confirmationMessage");
+
+        if (productName) {
+            messageElement.textContent = productName + " successfully added to cart.";
+        } else {
+            messageElement.textContent = "No product selected.";
+        }
+    </script>
 </body>
 </html>
