@@ -18,41 +18,48 @@
     </header>
 
     <header id="categoryHeader">
-        <h2>Quick Categories</h2>
-        
-        <div class="categories">
-            <a href="index.html?category=electronics" class="categorybtn">Electronics</a>
-            <a href="index.html?category=clothing" class="categorybtn">Clothing</a>
-            <a href="index.html?category=accessories" class="categorybtn">Accessories</a>
-            <a href="index.html?category=games" class="categorybtn">Games</a>
+        <div class="categoryTop">
+            <h2>Quick Categories</h2>
+            <button id="toggleHeader" type="button">Ʌ</button>
         </div>
 
-        <button id="toggleHeader" aria-label="Toggle Categories">^</button>
+        <div id="categoryContent">
+            <div class="categories">
+                <a href="?category=electronics" class="categorybtn">Electronics</a>
+                <a href="?category=clothing" class="categorybtn">Clothing</a>
+                <a href="?category=accessories" class="categorybtn">Accessories</a>
+                <a href="?category=games" class="categorybtn">Games</a>
+            </div>
+        </div>
     </header>
 
     <main class="catalog">
-        <div class="item">
-            <h3>Item A</h3>
-            <p>$10</p>
-            <a href="confirm.html?item=Item+A">
-                <button>Add to Cart</button>
-            </a>
-        </div>
+        <h2 id="categoryTitle">All Products</h2>
 
-        <div class="item">
-            <h3>Item B</h3>
-            <p>$20</p>
-            <a href="confirm.html?item=Item+B">
-                <button>Add to Cart</button>
-            </a>
-        </div>
+        <div class="productContainer">
+            <div class="item">
+                <h3>Item A</h3>
+                <p>$10</p>
+                <a href="confirm.html?item=Item+A">
+                    <button>Add to Cart</button>
+                </a>
+            </div>
 
-        <div class="item">
-            <h3>Item C</h3>
-            <p>$30</p>
-            <a href="confirm.html?item=Item+C">
-                <button>Add to Cart</button>
-            </a>
+            <div class="item">
+                <h3>Item B</h3>
+                <p>$20</p>
+                <a href="confirm.html?item=Item+B">
+                    <button>Add to Cart</button>
+                </a>
+            </div>
+
+            <div class="item">
+                <h3>Item C</h3>
+                <p>$30</p>
+                <a href="confirm.html?item=Item+C">
+                    <button>Add to Cart</button>
+                </a>
+            </div>
         </div>
     </main>
 

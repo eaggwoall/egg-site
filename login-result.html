@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="styles.css">
+    <title>title</title>
+</head>
+<body>
+    <h1>Form Results</h1>
+
+    <p id="output"></p>
+
+    <script>
+        function getFormData() {
+            const params = new URLSearchParams(window.location.search);
+
+            return {
+                username: params.get("user"),
+                password: params.get("pass"),
+            };
+        }
+
+        const formData = getFormData();
+
+        document.getElementById("output").innerHTML = `
+        <strong>Username:</strong> ${formData.username}<br>
+        <strong>Password:</strong> ${formData.password}<br>
+        `;
+</script>
+</body>
+</html>

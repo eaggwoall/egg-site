@@ -3,6 +3,8 @@ body {
     font-family: Arial, sans-serif;
 }
 
+/* ================= MAIN HEADER ================= */
+
 #mainHeader {
     display: flex;
     background: #222;
@@ -17,22 +19,34 @@ body {
     text-decoration: none;
     margin-left: 20px;
     font-weight: bold;
-    float: right;
 }
 
 #mainHeader nav a:hover {
     text-decoration: underline;
 }
 
+/* ================= CATEGORY HEADER ================= */
+
 #categoryHeader {
-    position: relative;
     background: #444;
     color: white;
-    padding: 15px 20px;
+    padding: 5px 20px;
 }
 
-#categoryHeader h2 {
-    margin-top: 0;
+#categoryContent {
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.categoryTop {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 15px 0px;
+}
+
+.categoryTop h2 {
+    margin: 0;
 }
 
 .categories {
@@ -50,26 +64,38 @@ body {
     font-size: 14px;
 }
 
-#toggleHeader {
-    position: absolute;
-    bottom: 8px;
-    right: 10px;
+/* Toggle Button */
 
-    background: transparent;
+#toggleHeader {
+    background: none;
     border: none;
     color: white;
-    font-size: 20px;
+    font-size: 22px;
     cursor: pointer;
+    padding: 0;
 }
 
 #toggleHeader:hover {
     opacity: 0.7;
 }
 
+/* CATALOG */
+
 .catalog {
+    padding: 20px;
+}
+
+/* Title styling */
+#categoryTitle {
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+
+/* Product row */
+.product-container {
     display: flex;
     gap: 20px;
-    padding: 20px;
+    flex-wrap: wrap;
 }
 
 .item {
@@ -82,4 +108,30 @@ body {
     margin-top: 10px;
     width: 100%;
     cursor: pointer;
+}
+
+/* LOGIN PAGE */
+
+#loginBox {
+    display: inline-block;
+    margin: 10px;
+    padding: 15px;
+    border: 2px solid gray;
+    border-radius: 8px;
+}
+
+#loginLegend {
+    margin: auto;
+    text-align: center;
+}
+
+#loginForm {
+    margin: 0 auto;
+    width: auto;
+    height: auto;
+    text-align: center;
+}
+
+#confirm {
+    margin-top: 10px;
 }
