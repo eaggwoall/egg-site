@@ -1,0 +1,28 @@
+<?php
+include 'includes/dbconnect.php';
+
+$custName = $_POST['custName'];
+$email = $_POST['email'];
+$phone = $_POST['phone'];
+$username = $_POST['username'];
+$password = $_POST['password'];
+
+// simple customer ID
+$custID = "CUST" . rand(10000, 99999);
+
+// insert into Customers
+$sql1 = "INSERT INTO Customers (custID, custName, email, phone, username) 
+         VALUES ('$custID', '$custName', '$email', '$phone', '$username')";
+mysqli_query($conn, $sql1);
+
+// insert into Auth (plaintext password)
+$sql2 = "INSERT INTO Auth (username, password) VALUES ('$username', '$password')";
+mysqli_query($conn, $sql2);
+
+// start session and log them in
+session_start();
+$_SESSION['username'] = $username;
+$_SESSION['custID'] = $custID;
+
+header("Location: index.php");
+?>
