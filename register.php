@@ -1,5 +1,4 @@
 <?php include 'includes/header.php'; ?>
-<body>
     <h1>Create an Account</h1>
     <form action="registerprocess.php" method="POST">
         <fieldset id="loginBox">
@@ -13,5 +12,5 @@
         </fieldset>
     </form>
     <p>Already have an account? <a href="login.php">Login here</a></p>
-</body>
-</html>
+
+<?php include 'includes/footer.php'; ?>

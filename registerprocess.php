@@ -15,14 +15,17 @@ $sql1 = "INSERT INTO Customers (custID, custName, email, phone, username)
          VALUES ('$custID', '$custName', '$email', '$phone', '$username')";
 mysqli_query($conn, $sql1);
 
-// insert into Auth (plaintext password)
-$sql2 = "INSERT INTO Auth (username, password) VALUES ('$username', '$password')";
+// insert into Users (plaintext password)
+$sql2 = "INSERT INTO Users (username, password) VALUES ('$username', '$password')";
 mysqli_query($conn, $sql2);
 
 // start session and log them in
 session_start();
+$nameParts = explode(" ", $custName);
 $_SESSION['username'] = $username;
 $_SESSION['custID'] = $custID;
+$_SESSION['custName'] = $custName;
+$_SESSION['firstName'] = $nameParts[0];
 
 header("Location: index.php");
 ?>

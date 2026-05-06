@@ -1,5 +1,5 @@
 <?php include 'includes/header.php'; ?>
-<body>
+<main class="pageBox">
     <h1>Source Code: https://github.com/eaggwoall/egg-site</h1>
-</body>
-</html>
+</main>
+<?php include 'includes/footer.php'; ?>
